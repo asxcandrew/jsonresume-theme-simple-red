@@ -107,7 +107,8 @@ a {
 #languages > section,
 #interests > section,
 #profiles > section,
-#contacts {
+#contacts ul,
+#contacts > section {
   display: flex;
   flex-wrap: wrap;
 }
@@ -188,14 +189,14 @@ a {
   width: 45%;
   margin-right: 5%;
 }
-#skills .keywords {
+#skills .keywords, #contacts ul {
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0.8em;
   margin-top: 10px;
 }
-#skills .keywords li {
+#skills .keywords li, #contacts li {
   margin-right: 20px;
 }
 #skills .item .name,
@@ -229,10 +230,6 @@ a {
 }
 #profiles, #skills {
   overflow: hidden;
-}
-#contacts {
-  margin-left: 25%;
-  font-size: 0.8em;
 }
 #contacts .site {
   align-self: flex-end;
